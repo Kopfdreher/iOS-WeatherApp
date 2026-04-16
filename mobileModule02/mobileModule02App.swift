@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct mobileModule02App: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      WeatherAppView()
     }
+  }
 }
