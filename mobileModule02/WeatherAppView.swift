@@ -25,8 +25,8 @@ struct WeatherAppView: View {
       )
       SwipeTabView(
         selectedTab: $selectedTab,
-        submittedText: submittedText,
-        locationManager: locationManager
+        locationManager: locationManager,
+        weatherService: weatherService
       )
       BottomBarView(selectedTab: $selectedTab)
     }
