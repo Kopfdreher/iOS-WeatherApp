@@ -23,6 +23,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
   }
 
   func requestLocation() {
+    self.location = nil
     manager.requestWhenInUseAuthorization()
     manager.requestLocation()
   }

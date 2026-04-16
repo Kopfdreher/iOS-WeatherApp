@@ -52,9 +52,12 @@ class WeatherService: ObservableObject {
   @Published var suggestions: [Location] = []
   @Published var weatherInfo: WeatherResponse?
   @Published var selectedLocation: Location?
+  @Published var errorMessage: String?
 
   func fetchWeather(for location: Location) {
     self.selectedLocation = location
+    self.errorMessage = nil
+
     let urlString = "https://api.open-meteo.com/v1/forecast?latitude=\(location.latitude)&longitude=\(location.longitude)&current_weather=true&hourly=temperature_2m,weathercode,windspeed_10m&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=auto"
 
     guard let url = URL(string: urlString) else { return }
@@ -64,6 +67,7 @@ class WeatherService: ObservableObject {
         let (data, _) = try await URLSession.shared.data(from: url)
         self.weatherInfo = try JSONDecoder().decode(WeatherResponse.self, from: data)
       } catch {
+        self.errorMessage = "Could not retrieve weather data. Please check your internet connection and try again."
         print("Weather fetch error: \(error)")
       }
     }
@@ -84,20 +88,31 @@ class WeatherService: ObservableObject {
   }
 
   func fetchCities(query: String) {
-    guard query.count > 2 else { return }
+    guard query.count > 2 else {
+      self.suggestions = []
+      return
+    }
+
     let urlString = "https://geocoding-api.open-meteo.com/v1/search?name=\(query)&count=5&language=en&format=json"
     guard let url = URL(string: urlString) else { return }
 
     Task {
       do {
         let (data, _) = try await URLSession.shared.data(from: url)
-
         let decoder = JSONDecoder()
         let response = try decoder.decode(GeocodingResponse.self, from: data)
-        self.suggestions = response.results ?? []
+
+        if response.results == nil || response.results?.isEmpty == true {
+          self.errorMessage = "Could not find any city with the name \(query)."
+          self.suggestions = []
+        } else {
+          self.errorMessage = nil
+          self.suggestions = response.results ?? []
+        }
       } catch {
-        print("Network or Decoding error: \(error)")
+        self.errorMessage = "Could not find any city."
         self.suggestions = []
+        self.weatherInfo = nil
       }
     }
   }

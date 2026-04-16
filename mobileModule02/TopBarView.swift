@@ -11,15 +11,26 @@ import SwiftUI
 struct TopBarView: View {
   @Binding var searchInput: String
   @Binding var submittedText: String
-  @ObservedObject var locationManager: LocationManager
-  @ObservedObject var weatherService: WeatherService
+  @EnvironmentObject var locationManager: LocationManager
+  @EnvironmentObject var weatherService: WeatherService
 
   var body: some View {
     HStack {
       TextField("Search location...", text: $searchInput)
         .textFieldStyle(RoundedBorderTextFieldStyle())
-        .onChange(of: searchInput) { oldValue, newValue in
-          weatherService.fetchCities(query: newValue)
+        .task(id: searchInput){
+          do {
+            try await Task.sleep(for: .milliseconds(300))
+            weatherService.fetchCities(query: searchInput)
+          } catch {}
+        }
+        .onSubmit {
+          if let firstResult = weatherService.suggestions.first {
+            submittedText = "\(firstResult.name), \(firstResult.country)"
+            weatherService.fetchWeather(for: firstResult)
+            weatherService.suggestions = []
+            searchInput = ""
+          }
         }
       Button(action: {
         submittedText = ""
@@ -35,7 +46,6 @@ struct TopBarView: View {
         SuggestionListView(
           searchInput: $searchInput,
           submittedText: $submittedText,
-          weatherService: weatherService
         )
         .offset(y: 60)
       }
@@ -47,7 +57,7 @@ struct TopBarView: View {
 struct SuggestionListView: View {
   @Binding var searchInput: String
   @Binding var submittedText: String
-  @ObservedObject var weatherService: WeatherService
+  @EnvironmentObject var weatherService: WeatherService
 
   var body: some View {
     List(weatherService.suggestions) { location in
@@ -55,6 +65,7 @@ struct SuggestionListView: View {
         submittedText = "\(location.name), \(location.admin1 ?? "") \(location.country)"
         searchInput = ""
         weatherService.suggestions = []
+        weatherService.fetchWeather(for: location)
       }) {
         VStack(alignment: .leading) {
           Text(location.name).bold()
@@ -66,7 +77,8 @@ struct SuggestionListView: View {
     }
     .listStyle(.plain)
     .scrollContentBackground(.hidden)
-    .background(.ultraThinMaterial)
+    .background(.clear)
+    .scrollDismissesKeyboard(.interactively)
     .frame(height: 200)
   }
 }
