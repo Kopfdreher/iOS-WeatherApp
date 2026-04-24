@@ -34,11 +34,7 @@ Building this app helped me master several core iOS development concepts:
 3.  **API Keys:** Managing sensitive information using Plist files or environment variables.
 4.  **Auto Layout:** Mastering constraints to ensure a pixel-perfect design.
 
-## 📸 Screenshots
 
-| Home Screen | Search View | Settings |
-| :---: | :---: | :---: |
-| *[Add Screenshot]* | *[Add Screenshot]* | *[Add Screenshot]* |
 
 ## 🏁 Getting Started
 
