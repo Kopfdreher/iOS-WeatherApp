@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		5E482FBC2F928D7200FA2BB7 /* mobileModule03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobileModule03.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E482FBC2F928D7200FA2BB7 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5E482FBE2F928D7200FA2BB7 /* mobileModule03 */ = {
+		5E482FBE2F928D7200FA2BB7 /* WeatherApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = mobileModule03;
+			path = WeatherApp;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		5E482FB32F928D7200FA2BB7 = {
 			isa = PBXGroup;
 			children = (
-				5E482FBE2F928D7200FA2BB7 /* mobileModule03 */,
+				5E482FBE2F928D7200FA2BB7 /* WeatherApp */,
 				5E482FBD2F928D7200FA2BB7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +40,7 @@
 		5E482FBD2F928D7200FA2BB7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E482FBC2F928D7200FA2BB7 /* mobileModule03.app */,
+				5E482FBC2F928D7200FA2BB7 /* WeatherApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5E482FBB2F928D7200FA2BB7 /* mobileModule03 */ = {
+		5E482FBB2F928D7200FA2BB7 /* WeatherApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E482FC72F928D7500FA2BB7 /* Build configuration list for PBXNativeTarget "mobileModule03" */;
+			buildConfigurationList = 5E482FC72F928D7500FA2BB7 /* Build configuration list for PBXNativeTarget "WeatherApp" */;
 			buildPhases = (
 				5E482FB82F928D7200FA2BB7 /* Sources */,
 				5E482FB92F928D7200FA2BB7 /* Frameworks */,
@@ -61,13 +61,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5E482FBE2F928D7200FA2BB7 /* mobileModule03 */,
+				5E482FBE2F928D7200FA2BB7 /* WeatherApp */,
 			);
-			name = mobileModule03;
+			name = WeatherApp;
 			packageProductDependencies = (
 			);
 			productName = mobileModule03;
-			productReference = 5E482FBC2F928D7200FA2BB7 /* mobileModule03.app */;
+			productReference = 5E482FBC2F928D7200FA2BB7 /* WeatherApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5E482FB72F928D7200FA2BB7 /* Build configuration list for PBXProject "mobileModule03" */;
+			buildConfigurationList = 5E482FB72F928D7200FA2BB7 /* Build configuration list for PBXProject "WeatherApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5E482FBB2F928D7200FA2BB7 /* mobileModule03 */,
+				5E482FBB2F928D7200FA2BB7 /* WeatherApp */,
 			);
 		};
 /* End PBXProject section */
@@ -313,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5E482FB72F928D7200FA2BB7 /* Build configuration list for PBXProject "mobileModule03" */ = {
+		5E482FB72F928D7200FA2BB7 /* Build configuration list for PBXProject "WeatherApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5E482FC52F928D7500FA2BB7 /* Debug */,
@@ -322,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E482FC72F928D7500FA2BB7 /* Build configuration list for PBXNativeTarget "mobileModule03" */ = {
+		5E482FC72F928D7500FA2BB7 /* Build configuration list for PBXNativeTarget "WeatherApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5E482FC82F928D7500FA2BB7 /* Debug */,

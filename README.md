@@ -5,7 +5,7 @@
 
 A native iOS weather application built with Swift. This project focuses on modern mobile development fundamentals, including asynchronous networking, JSON parsing, and reactive UI updates.
 
-
+ <img src="weatherApp-banner.png" width="100%">
 
 ## 🚀 Features
 
