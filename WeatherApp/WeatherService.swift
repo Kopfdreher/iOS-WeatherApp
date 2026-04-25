@@ -1,6 +1,6 @@
 //
 //  WeatherService.swift
-//  mobileModule02
+//  WeatherApp
 //
 //  Created by Sergej Gavrilov on 16.04.26.
 //
@@ -70,6 +70,20 @@ class WeatherService: ObservableObject {
         self.errorMessage = "Could not retrieve weather data. Please check your internet connection and try again."
         print("Weather fetch error: \(error)")
       }
+    }
+  }
+
+  func weatherIcon(_ code: Int) -> String {
+    switch code {
+    case 0: return "sun.max.fill"
+    case 1...3: return "cloud.sun.fill"
+    case 45, 48: return "cloud.fog.fill"
+    case 51...55: return "cloud.drizzle.fill"
+    case 61...65: return "cloud.rain.fill"
+    case 71...75: return "cloud.snow.fill"
+    case 80...82: return "cloud.heavyrain.fill"
+    case 95...99: return "cloud.bolt.rain.fill"
+    default: return "questionmark.circle"
     }
   }
 

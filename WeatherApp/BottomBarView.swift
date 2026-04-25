@@ -1,6 +1,6 @@
 //
 //  BottomBarView.swift
-//  mobileModule02
+//  WeatherApp
 //
 //  Created by Sergej Gavrilov on 15.04.26.
 //

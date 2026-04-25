@@ -1,6 +1,6 @@
 //
 //  WeatherAppView.swift
-//  mobileModule02
+//  WeatherApp
 //
 //  Created by Sergej Gavrilov on 15.04.26.
 //
@@ -17,11 +17,19 @@ struct WeatherAppView: View {
   @StateObject private var weatherService = WeatherService()
 
   var body: some View {
-    VStack(spacing: 0) {
-      TopBarView(searchInput: $searchInput, submittedText: $submittedText)
-      SwipeTabView(selectedTab: $selectedTab)
-      .frame(maxWidth: .infinity, maxHeight: .infinity)
-      BottomBarView(selectedTab: $selectedTab)
+    ZStack {
+
+      Image("AppBackground")
+        .resizable()
+        .ignoresSafeArea()
+        .overlay(Color.black.opacity(0.0))
+
+      VStack(spacing: 0) {
+        TopBarView(searchInput: $searchInput, submittedText: $submittedText)
+        SwipeTabView(selectedTab: $selectedTab)
+          .frame(maxWidth: .infinity, maxHeight: .infinity)
+        BottomBarView(selectedTab: $selectedTab)
+      }
     }
     .environmentObject(locationManager)
     .environmentObject(weatherService)

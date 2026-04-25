@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		5E482F7C2F9002D600FA2BB7 /* mobileModule02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobileModule02.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E482FBC2F928D7200FA2BB7 /* mobileModule03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobileModule03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5E482F7E2F9002D600FA2BB7 /* mobileModule02 */ = {
+		5E482FBE2F928D7200FA2BB7 /* mobileModule03 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = mobileModule02;
+			path = mobileModule03;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5E482F792F9002D600FA2BB7 /* Frameworks */ = {
+		5E482FB92F928D7200FA2BB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5E482F732F9002D600FA2BB7 = {
+		5E482FB32F928D7200FA2BB7 = {
 			isa = PBXGroup;
 			children = (
-				5E482F7E2F9002D600FA2BB7 /* mobileModule02 */,
-				5E482F7D2F9002D600FA2BB7 /* Products */,
+				5E482FBE2F928D7200FA2BB7 /* mobileModule03 */,
+				5E482FBD2F928D7200FA2BB7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5E482F7D2F9002D600FA2BB7 /* Products */ = {
+		5E482FBD2F928D7200FA2BB7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E482F7C2F9002D600FA2BB7 /* mobileModule02.app */,
+				5E482FBC2F928D7200FA2BB7 /* mobileModule03.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5E482F7B2F9002D600FA2BB7 /* mobileModule02 */ = {
+		5E482FBB2F928D7200FA2BB7 /* mobileModule03 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E482F872F9002D900FA2BB7 /* Build configuration list for PBXNativeTarget "mobileModule02" */;
+			buildConfigurationList = 5E482FC72F928D7500FA2BB7 /* Build configuration list for PBXNativeTarget "mobileModule03" */;
 			buildPhases = (
-				5E482F782F9002D600FA2BB7 /* Sources */,
-				5E482F792F9002D600FA2BB7 /* Frameworks */,
-				5E482F7A2F9002D600FA2BB7 /* Resources */,
+				5E482FB82F928D7200FA2BB7 /* Sources */,
+				5E482FB92F928D7200FA2BB7 /* Frameworks */,
+				5E482FBA2F928D7200FA2BB7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5E482F7E2F9002D600FA2BB7 /* mobileModule02 */,
+				5E482FBE2F928D7200FA2BB7 /* mobileModule03 */,
 			);
-			name = mobileModule02;
+			name = mobileModule03;
 			packageProductDependencies = (
 			);
-			productName = mobileModule02;
-			productReference = 5E482F7C2F9002D600FA2BB7 /* mobileModule02.app */;
+			productName = mobileModule03;
+			productReference = 5E482FBC2F928D7200FA2BB7 /* mobileModule03.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5E482F742F9002D600FA2BB7 /* Project object */ = {
+		5E482FB42F928D7200FA2BB7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2640;
 				LastUpgradeCheck = 2640;
 				TargetAttributes = {
-					5E482F7B2F9002D600FA2BB7 = {
+					5E482FBB2F928D7200FA2BB7 = {
 						CreatedOnToolsVersion = 26.4;
 					};
 				};
 			};
-			buildConfigurationList = 5E482F772F9002D600FA2BB7 /* Build configuration list for PBXProject "mobileModule02" */;
+			buildConfigurationList = 5E482FB72F928D7200FA2BB7 /* Build configuration list for PBXProject "mobileModule03" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 5E482F732F9002D600FA2BB7;
+			mainGroup = 5E482FB32F928D7200FA2BB7;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 5E482F7D2F9002D600FA2BB7 /* Products */;
+			productRefGroup = 5E482FBD2F928D7200FA2BB7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5E482F7B2F9002D600FA2BB7 /* mobileModule02 */,
+				5E482FBB2F928D7200FA2BB7 /* mobileModule03 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5E482F7A2F9002D600FA2BB7 /* Resources */ = {
+		5E482FBA2F928D7200FA2BB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5E482F782F9002D600FA2BB7 /* Sources */ = {
+		5E482FB82F928D7200FA2BB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5E482F852F9002D900FA2BB7 /* Debug */ = {
+		5E482FC52F928D7500FA2BB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -189,7 +189,7 @@
 			};
 			name = Debug;
 		};
-		5E482F862F9002D900FA2BB7 /* Release */ = {
+		5E482FC62F928D7500FA2BB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -246,7 +246,7 @@
 			};
 			name = Release;
 		};
-		5E482F882F9002D900FA2BB7 /* Debug */ = {
+		5E482FC82F928D7500FA2BB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -256,19 +256,17 @@
 				DEVELOPMENT_TEAM = 9SS27LCANQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location data for personalized weather data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-2Berlin.mobileModule02";
+				PRODUCT_BUNDLE_IDENTIFIER = "-2Berlin.mobileModule03";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -280,7 +278,7 @@
 			};
 			name = Debug;
 		};
-		5E482F892F9002D900FA2BB7 /* Release */ = {
+		5E482FC92F928D7500FA2BB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -290,19 +288,17 @@
 				DEVELOPMENT_TEAM = 9SS27LCANQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location data for personalized weather data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-2Berlin.mobileModule02";
+				PRODUCT_BUNDLE_IDENTIFIER = "-2Berlin.mobileModule03";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -317,25 +313,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5E482F772F9002D600FA2BB7 /* Build configuration list for PBXProject "mobileModule02" */ = {
+		5E482FB72F928D7200FA2BB7 /* Build configuration list for PBXProject "mobileModule03" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E482F852F9002D900FA2BB7 /* Debug */,
-				5E482F862F9002D900FA2BB7 /* Release */,
+				5E482FC52F928D7500FA2BB7 /* Debug */,
+				5E482FC62F928D7500FA2BB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E482F872F9002D900FA2BB7 /* Build configuration list for PBXNativeTarget "mobileModule02" */ = {
+		5E482FC72F928D7500FA2BB7 /* Build configuration list for PBXNativeTarget "mobileModule03" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E482F882F9002D900FA2BB7 /* Debug */,
-				5E482F892F9002D900FA2BB7 /* Release */,
+				5E482FC82F928D7500FA2BB7 /* Debug */,
+				5E482FC92F928D7500FA2BB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5E482F742F9002D600FA2BB7 /* Project object */;
+	rootObject = 5E482FB42F928D7200FA2BB7 /* Project object */;
 }
